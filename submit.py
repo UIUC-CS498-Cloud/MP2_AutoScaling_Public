@@ -1,14 +1,23 @@
 import requests
 import json
 
-# Fill in the following information
-YOUR_LOAD_BALANCER = "mp2LoadBalancer-1890294852.us-east-1.elb.amazonaws.com" # <put your load_balancer address>, 
+''' Fill in the following information '''
+# General information
 YOUR_EMAIL = "" # <put your coursera account email>,
 YOUR_SECRET = "" # <put your secret token from coursera>
 
-# Don't change the following
+# Section 1
+IP_ADDRESS1 = "" # <put your first EC2 instance's IP address>
+IP_ADDRESS2 = "" # <put your second instance's IP address>
+
+# Section 2
+YOUR_LOAD_BALANCER = "" # Section 2. <put your load_balancer address>, 
+
+''' Don't change the following '''
 url = "https://ekwygde36j.execute-api.us-east-1.amazonaws.com/alpha/execution"
 input = {
+            'ip_address1': IP_ADDRESS1,
+            'ip_address2': IP_ADDRESS2,
 			'load_balancer': YOUR_LOAD_BALANCER, 
 			'submitterEmail': YOUR_EMAIL, 
 			'secret': YOUR_SECRET, 
