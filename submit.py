@@ -9,16 +9,17 @@ YOUR_SECRET = "" # <put your secret token from coursera>
 # Section 1
 IP_ADDRESS1 = "" # <put your first EC2 instance's IP address>
 IP_ADDRESS2 = "" # <put your second instance's IP address>
-
+YOUR_LOAD_BALANCER1 = "" # <put your load_balancer address for section 1>
 # Section 2
-YOUR_LOAD_BALANCER = "" # Section 2. <put your load_balancer address>, 
+YOUR_LOAD_BALANCER2 = "" # <put your load_balancer address for section 2>, 
 
 ''' Don't change the following '''
 url = "https://ekwygde36j.execute-api.us-east-1.amazonaws.com/alpha/execution"
 input = {
             'ip_address1': IP_ADDRESS1,
             'ip_address2': IP_ADDRESS2,
-			'load_balancer': YOUR_LOAD_BALANCER, 
+			'load_balancer1': YOUR_LOAD_BALANCER1, 
+            'load_balancer2': YOUR_LOAD_BALANCER2,
 			'submitterEmail': YOUR_EMAIL, 
 			'secret': YOUR_SECRET, 
 		}
